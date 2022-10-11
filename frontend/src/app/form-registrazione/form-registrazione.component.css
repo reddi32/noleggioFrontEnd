@@ -1,0 +1,21 @@
+.superForm{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.form-control
+{
+	width: 30%;
+	outline:none;
+}
+
+.form-select
+{
+	width: 30%;
+	outline:none;
+}
+
+.btn-registrazione{
+    position: center;
+
+}

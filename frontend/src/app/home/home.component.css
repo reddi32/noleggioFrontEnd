@@ -19,7 +19,7 @@
 }
 
 .container-fluid.d-flex.justify-content-center{
-    padding-top: 5%;
+    padding-top: 2.5%;
     border: 0;
 }
 
@@ -58,11 +58,11 @@
 }
 
 .buttonRegistrazione {
-    padding-top: 5%;
+    padding-top: 2.5%;
 }
 
 .container-fluid.text-center {
-    padding-top: 5%;
+    padding-top: 2.5%;
 }
 
 .list-group-item.list-group-item-noaction.d-flex.gap-3.py-3 {

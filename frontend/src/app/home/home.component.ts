@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Card } from '../model/card'
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  listaCard: Card[] = [];
+  constructor() { 
+    this.listaCard.push (
+      new Card ("blahblahblahblahblah", "digital-watch.png")
+    );
+    this.listaCard.push (
+      new Card ("blahblahblahblahblah", "car-rent.png")
+    );
+  }
 
   ngOnInit(): void {
   }

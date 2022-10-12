@@ -18,10 +18,13 @@
     border-radius: 10px;
 }
 
-.container-fluid.card {
+.container-fluid.d-flex.justify-content-center{
     padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
+    border: 0;
+}
+
+.card.mb-3.shadow.p-3.mb-5.bg-white.rounded {
+    width: 50%;
     border: 0;
 }
 
@@ -45,10 +48,18 @@
 
 .text-TizianoMotors {
     padding-top: 10%;
-    padding-left: 20%;
 }
 
 .subtitle-TizianoMotors {
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.card.card-cover.rounded-4 {
+    border: 0;
+}
+
+.img-fluid.mx-auto.d-block {
+    width: 35%;
+    height: 50%;
 }

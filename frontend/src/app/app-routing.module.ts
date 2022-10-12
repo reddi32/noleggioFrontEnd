@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
 import { AziendeComponent } from './aziende/aziende.component';
+import { AutoComponent } from './auto/auto.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'formregistrazione', component: FormRegistrazioneComponent },
   { path: 'aziende', component: AziendeComponent},
-  { path: 'faq', component: FaqComponent}
+  { path: 'faq', component: FaqComponent},
+  { path: 'faq', component: FaqComponent},
+  { path: 'auto', component: AutoComponent}
+
 ];
 
 @NgModule({

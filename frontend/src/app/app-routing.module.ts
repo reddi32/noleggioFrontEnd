@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormRegistrazioneComponent } from './formregistrazione/form-registrazione.component';
 import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'formregistrazione', component: FormRegistrazioneComponent },
   { path: 'faq', component: FaqComponent}
 ];

@@ -21,7 +21,7 @@
 
   <div class="container-fluid text-center">
     <h2 class="text-TizianoMotors" style="color: #226ce0;">Perché scegliere TizianoMotors</h2>
-    <p class="subtitle-TizianoMotors">Nei nostri uffici troverai sempre personale altamente qualificato che ti accompagnerà durante tutto il processo di noleggio della tua auto. 
+    <p class="subtitle-TizianoMotors text-center">Nei nostri uffici troverai sempre personale altamente qualificato che ti accompagnerà durante tutto il processo di noleggio della tua auto. 
                                       In base alle tue esigenze i nostri consulenti ti offriranno l'auto migliore per le tue richieste.</p>
   </div>
 
@@ -31,8 +31,66 @@
         <div class="card card-cover rounded-4 ">
           <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
             <img src="../assets/{{cardPresentazione.img}}" class="img-fluid mx-auto d-block">
-            <p class="pt-5 mt-5 mb-4 fs-5 lh-1 mx-auto">{{cardPresentazione.paragrafo}}</p>
+            <p class="pt-2 mt-4 mb-4 fs-6 mx-auto text-center">{{cardPresentazione.paragrafo}}</p>
           </div>
         </div>
       </div>
   </div>  
+
+  <!--Bottone che invita alla registrazione--> 
+  <div class="buttonRegistrazione">
+    <button type="button" class="btn btn-primary btn-lg mx-auto d-block" routerLink="/formregistrazione">Registrati ora</button>
+  </div>
+
+  <!--Requisiti per il noleggio-->
+  <div class="container-fluid text-center">
+    <h2 class="text-requisiti" style="color: #226ce0;">Di cosa hai bisogno?</h2>
+  </div>
+
+  <!--Paragrafo di riempimento per i requisiti-->
+  <div class="container text-center paragrafo">
+    <p class="text-requisiti">Con noi di TizianoMotors il noleggio è semplicissimo. Ti basta la patente e qualche minuto del tuo tempo per procedere alla registrazione e poter scegliere l'auto più adatta a te</p>
+  </div>
+  <!--Lista dei requisiti necessari-->
+  <div class="container-fluid" id="custom-cards">  
+    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+      <div class="list-group d-auto">
+        <ul class="listaNecessita"> 
+          <div class="list-group-item list-group-item-noaction d-flex gap-3 py-3" aria-current="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#226ce0" class="bi bi-file-person" viewBox="0 0 16 16">
+              <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+              <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            <div class="d-flex gap-2">
+              <div>
+                <h6 class="py-1">Patente di guida</h6>
+              </div>
+            </div>
+          </div>
+        <div class="list-group d-auto">
+          <div class="list-group-item list-group-item-noaction d-flex gap-3 py-3" aria-current="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#226ce0" class="bi bi-watch" viewBox="0 0 16 16">
+              <path d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5z"/>
+              <path d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+            </svg>
+            <div class="d-flex gap-2">
+              <div>
+                <h6 class="py-1">Qualche minuto del tuo tempo</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>  
+  </div>
+
+  <!--Lista delle auto-->
+  <div class="container-fluid text-center">
+    <h4 class="text-flotta" style="color: #3a6ea5;">Scopri la nostra flotta</h4>
+    <h2 class="text-requisiti" style="color: #226ce0;">Le auto di TizianoMotors</h2>
+  </div>
+
+  <div class="buttonAuto">
+    <button type="button" class="btn btn-primary btn-lg mx-auto d-block" routerLink="/auto">Vedi Auto</button>
+  </div>

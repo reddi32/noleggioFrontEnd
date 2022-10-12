@@ -19,7 +19,7 @@
 }
 
 .container-fluid.d-flex.justify-content-center{
-    padding-top: 10%;
+    padding-top: 5%;
     border: 0;
 }
 
@@ -41,11 +41,6 @@
 
 .card-title{
     width: 25%;
-     
-}
-
-.text-TizianoMotors {
-    padding-top: 10%;
 }
 
 .subtitle-TizianoMotors {
@@ -60,4 +55,20 @@
 .img-fluid.mx-auto.d-block {
     width: 35%;
     height: 50%;
+}
+
+.buttonRegistrazione {
+    padding-top: 5%;
+}
+
+.container-fluid.text-center {
+    padding-top: 5%;
+}
+
+.list-group-item.list-group-item-noaction.d-flex.gap-3.py-3 {
+    border: 0;
+}
+
+.buttonAuto {
+    padding-top: 2%;
 }

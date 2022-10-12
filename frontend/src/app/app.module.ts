@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
 import { AutoComponent } from './auto/auto.component';
+import { AziendeComponent } from './aziende/aziende.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AutoComponent } from './auto/auto.component';
     FaqComponent,
     LoginComponent,
     AutoComponent,
+    AziendeComponent,
   ],
   imports: [
     BrowserModule,

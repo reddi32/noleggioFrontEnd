@@ -1,1 +1,23 @@
-<p>aziende works!</p>
+  <!--Hero image-->
+  <img src="../assets/heroImage.png" alt="TizianoMotors" class="img-fluid hero" aria-hidden="true">
+
+  <div class="container-fluid text-center">
+    <h2 class="text-TizianoMotors" style="color: #226ce0;">Perché scegliere il noleggio aziendale?</h2>
+    <p class="subtitle-TizianoMotors text-center">Il noleggio aziendale è un sistema che mette a disposizione di <strong>manager</strong> e <strong>dipendenti</strong>
+                                                  un'intera flotta di auto senza dover gestire veicoli di proprietà. Funziona come il noleggio per i privati ma con 
+                                                  alcune piccole aggiunte, in base alle esigenze del proprio business.</p>
+  </div>
+
+  <div class="container-fluid px-4 py-5" id="custom-cards">  
+    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+      <div class="col" *ngFor="let autoAziendale of listaAutoAziendale">
+        <div class="card card-cover rounded-4 ">
+          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+            <img src="../assets/{{autoAziendale.img}}" class="img-fluid mx-auto d-block">
+            <p class="pt-2 mt-4 mb-4 fs-6 mx-auto text-center">{{autoAziendale.testo}}</p>
+          </div>
+        </div>
+      </div>
+  </div>  
+
+  

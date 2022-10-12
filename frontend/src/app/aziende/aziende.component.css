@@ -1,0 +1,43 @@
+
+.collapse.navbar-collapse.justify-content-center {
+    padding-right: 10;
+}
+
+.text-TizianoMotors {
+    padding-top: 5%;
+}
+
+.img-fluid.hero {
+    width: 100%;
+   }
+   
+.img-fluid.rounded-start {
+    width: 300px;
+    height: 300px;
+}
+
+.card-title {
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.container-fluid.d-flex.justify-content-center{
+    padding-top: 2.5%;
+    border: 0;
+}
+
+.subtitle-TizianoMotors {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.card.card-cover.rounded-4 {
+    border: 0;
+}
+
+.img-fluid.mx-auto.d-block {
+    width: 35%;
+    height: 50%;
+}
+

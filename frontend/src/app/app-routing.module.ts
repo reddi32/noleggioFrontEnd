@@ -4,12 +4,14 @@ import { FormRegistrazioneComponent } from './formregistrazione/form-registrazio
 import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
+import { AziendeComponent } from './aziende/aziende.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: LoginComponent},
   { path: 'formregistrazione', component: FormRegistrazioneComponent },
+  { path: 'aziende', component: AziendeComponent},
   { path: 'faq', component: FaqComponent}
 ];
 

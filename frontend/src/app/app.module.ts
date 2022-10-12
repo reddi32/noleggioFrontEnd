@@ -10,7 +10,7 @@ import { FaqComponent } from './faq/faq.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    FaqComponent
+    FaqComponent,
   ],
   imports: [
     BrowserModule,

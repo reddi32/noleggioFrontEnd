@@ -4,13 +4,14 @@ import { FormRegistrazioneComponent } from './formregistrazione/form-registrazio
 import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
-
+import { AutoComponent } from './auto/auto.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: LoginComponent},
   { path: 'formregistrazione', component: FormRegistrazioneComponent },
-  { path: 'faq', component: FaqComponent}
+  { path: 'faq', component: FaqComponent},
+  { path: 'auto', component: AutoComponent}
 ];
 
 @NgModule({

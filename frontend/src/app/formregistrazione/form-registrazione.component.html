@@ -1,75 +1,117 @@
-<div class="superForm">     
-<form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="example@email.com" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputAddress" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="inputAddress" required>
-        </div>
-        <div class="col-md-6">
-            <label for="inputAddress" class="form-label">Cognome</label>
-            <input type="text" class="form-control" id="inputAddress" required>
-          </div>
-        <div class="col-md-6">
-          <label for="inputAddress2" class="form-label">Codice Fiscale</label>
-          <input type="text" class="form-control" id="inputAddress2"  required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Città di nascita</label>
-          <input type="text" class="form-control" id="inputCity" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputState" class="form-label">Paese di nascita</label>
-          <select id="inputState" class="form-select">
-            <option selected>Selezione paese</option>
-            <option>Italia</option>
-            <option>Germania</option>
-            <option>Francia</option>
-            <option>Polonia</option>
-            <option>Ucraina</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="inputZip" class="form-label">CAP</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <fieldset class="col-md-6">
-            <legend class="col-form-label col-sm-2 pt-0">Tipologia account</legend>
-            <div class="col-sm-10">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                <label class="form-check-label" for="gridRadios1">
-                  Privato
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                  Azienda
-                </label>
-              </div>
-             
+<body>
+
+  <div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Registrati!</h3>
+                    <p>Compilare i campi in basso.</p>
+                    <form class="requires-validation" novalidate>
+
+                        <div class="col-md-12">
+                           <input class="form-control" type="text" name="name" placeholder="Nome" required>
+                           <div class="valid-feedback">Nome valido!</div>
+                           <div class="invalid-feedback">Il nome non può essere vuoto!</div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <input class="form-control" type="text" name="cognome" placeholder="Cognome" required>
+                          <div class="valid-feedback">Cognome valido!</div>
+                          <div class="invalid-feedback">Il Cognome non può essere vuoto!</div>
+                       </div>
+
+                       <br>
+
+                        <div class="col-md-12 mt-3">
+                          <label class="mb-3 mr-1" for="gender">Sesso: </label>
+  
+                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                          <label class="btn btn-sm btn-outline-secondary" for="male">Maschio</label>
+  
+                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                          <label class="btn btn-sm btn-outline-secondary" for="female">Femmina</label>
+  
+                          
+                             <div class="valid-feedback mv-up">Sesso selezionato!</div>
+                              <div class="invalid-feedback mv-up">Seleziona il sesso!</div>
+                          </div>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="email" name="email" placeholder="Indirizzo E-mail" required>
+                             <div class="valid-feedback">Email non valida!</div>
+                             <div class="invalid-feedback">Il campo non può essere vuoto!</div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <input class="form-control" type="text" name="CF" placeholder="Codice Fiscale" required>
+                           <div class="valid-feedback">Codice fiscale non valido!</div>
+                           <div class="invalid-feedback">Il campo non può essere vuoto!</div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label class="mb-3 mr-1"></label>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label class="mb-3 mr-1" for="dateStandard">Data di nascita: </label>
+                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard">
+                    </div>
+
+                       <div class="col-md-12">
+                            <select class="form-select mt-3" required>
+                                  <option selected disabled value="">Paese di Nascita</option>
+                                  <option value="italia">Italia</option>
+                                  <option value="francia">Francia</option>
+                                  <option value="germania">Germania</option>
+                           </select>
+                            <div class="valid-feedback">Paese selezionato!</div>
+                            <div class="invalid-feedback">Seleziona un paese!</div>
+                       </div>
+
+
+                       <div class="col-md-12">
+                          <input class="form-control" type="password" name="password" placeholder="Password" required>
+                           <div class="valid-feedback">Password valida!</div>
+                           <div class="invalid-feedback">Devi inserire una password!</div>
+                       </div>
+
+
+                       <div class="col-md-12 mt-3">
+                        <label class="mb-3 mr-1" for="account">Tipo Account: </label>
+
+                        <input type="radio" class="btn-check" name="account" id="privato" autocomplete="off" required>
+                        <label class="btn btn-sm btn-outline-secondary" for="privato">Privato</label>
+
+                        <input type="radio" class="btn-check" name="account" id="azienda" autocomplete="off" required>
+                        <label class="btn btn-sm btn-outline-secondary" for="azienda">Azienda</label>
+
+                        
+                           <div class="valid-feedback mv-up">Tipologia di account selezionata!</div>
+                            <div class="invalid-feedback mv-up">Perfavore, seleziona la tipologia di account!</div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <input type="file" class="form-control" id="inputGroupFile02">
+                          <label class="input-group-text" for="inputGroupFile02">Carica file</label>
+                        </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label">Confermo che i dati sono corretti</label>
+                     <div class="invalid-feedback">Conferma che i dati immessi sono corretti!</div>
+                    </div>
+              
+
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Registrati</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </fieldset>
-        
-        
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Acconsento ai termini di utilizzo
-            </label>
-          </div>
         </div>
-       
-        <div class="col-12" id="btn-registrazione">
-          <button type="submit" class="btn btn-primary">Registrati</button>
-        </div>
-      </form>
-    </div>  
+    </div>
+</div>
+
+
+</body> 

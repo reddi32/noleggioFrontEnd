@@ -1,4 +1,66 @@
 <div class="scatola shadow p-3 mb-5 bg-body rounded mx-auto">
-    <p>adasdasdadas</p>
+    
+    <div class="row">
+    
+        <div class="col-sm">
+        <h4>Filtri per la selezione auto</h4>
+        </div>
+        
+        <div class="col-sm">
+            <h4>Scegli la data</h4>
+            </div>
+    </div>
+       
+    
+    <div class="row">
+        <div class="col-sm-3">
+            <label for="dropdownCategoria" class="form-label">Categoria auto:</label>
+            <div class="dropdown">
+                
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Scegli la categoria
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">City car</a></li>
+                  <li><a class="dropdown-item" href="#">Sportiva</a></li>
+                  <li><a class="dropdown-item" href="#">SUV</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="col-sm">
+            <label for="dropdownModello" class="form-label">Modello auto:</label>
+            <div class="dropdown">
+                
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Scegli il modello:
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Modello 1</a></li>
+                  <li><a class="dropdown-item" href="#">Modello 2</a></li>
+                  <li><a class="dropdown-item" href="#">Modello 3</a></li>
+                </ul>
+              </div>
+        </div>
+        
+        <div class="col-sm">
+            <label class="mb-3 mr-1" for="dateStandard">Data di ritiro: </label>
+                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard">
+        </div>
+      
+        <div class="col-sm">
+            <label class="mb-3 mr-1" for="dateStandard">Data di consegna: </label>
+                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard">
+        </div>
+    
+    
+    
+    </div>
+      
+      
+      <div class="row">
+        <div class="form-button mt-3">
+            <button id="submit" type="submit" class="btn btn-primary">Vedi le auto disponibili</button>
+        
+      </div>
 
 </div>

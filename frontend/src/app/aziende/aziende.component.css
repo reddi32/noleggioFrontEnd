@@ -41,3 +41,21 @@
     height: 50%;
 }
 
+.card.mb-3.shadow {
+    border: 0;
+}
+
+.img-fluid.rounded-start {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container-fluid.text-center {
+    padding-top: 5%;
+}
+
+.text-descrizione {
+    padding-left: 20%;
+    padding-right: 20%;
+}

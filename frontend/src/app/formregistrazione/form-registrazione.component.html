@@ -1,6 +1,6 @@
 <body>
-
-  <div class="form-body">
+<form #registerform="ngForm" (ngSubmit)="onSubmit(registerform)">
+  <div class="form-body" >
     <div class="row">
         <div class="form-holder">
             <div class="form-content">
@@ -20,6 +20,12 @@
                           <div class="valid-feedback">Cognome valido!</div>
                           <div class="invalid-feedback">Il Cognome non può essere vuoto!</div>
                        </div>
+
+                       <div class="col-md-12">
+                        <input class="form-control" type="text" name="name" placeholder="Cellulare" required>
+                        <div class="valid-feedback">Cellulare non valido!</div>
+                        <div class="invalid-feedback">Il cellulare non può essere vuoto!</div>
+                     </div>
 
                        <br>
 
@@ -112,6 +118,6 @@
         </div>
     </div>
 </div>
-
+</form>
 
 </body> 

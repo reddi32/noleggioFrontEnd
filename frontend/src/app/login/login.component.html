@@ -1,4 +1,5 @@
 <body>
+    <form  #loginform="ngForm" (ngSubmit)="onSubmit(loginform)">
 
     <div class="form-body">
       <div class="row">
@@ -9,13 +10,13 @@
                       <form class="requires-validation" novalidate>
   
                           <div class="col-md-12">
-                              <input class="form-control" type="email" name="email" placeholder="Indirizzo E-mail" required>
+                              <input class="form-control" type="email" name="email" placeholder="Indirizzo E-mail" required ngModel>
                                <div class="valid-feedback">Email non valida!</div>
                                <div class="invalid-feedback">Il campo non può essere vuoto!</div>
                           </div>
   
                          <div class="col-md-12">
-                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                            <input class="form-control" type="password" name="password" placeholder="Password" required ngModel>
                              <div class="valid-feedback">Password valida!</div>
                              <div class="invalid-feedback">Devi inserire una password!</div>
                          </div>
@@ -38,6 +39,6 @@
       </div>
   </div>
   
-  
+</form>
   </body> 
   

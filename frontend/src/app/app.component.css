@@ -1,6 +1,5 @@
-.container.footer-expand {
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+.container{
+  bottom: 0;
+  display: absolute !important;
+  max-width: 100%;
+  }

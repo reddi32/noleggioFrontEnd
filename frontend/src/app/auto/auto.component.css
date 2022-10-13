@@ -4,3 +4,28 @@
     margin-top: 7%;
 
 }
+
+.paddingBottom{
+    padding-bottom: 3%;
+}
+
+.paddingTop{
+    padding-top: 3%;
+}
+
+.paddingLateraleBlocco{
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.testoLabelFiltro{
+    color: #457b9d;
+    font-weight: bold; 
+
+}
+
+.paddingLabelFiltro{
+    padding-bottom: 2%;
+}
+

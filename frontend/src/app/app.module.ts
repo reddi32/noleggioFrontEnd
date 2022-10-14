@@ -12,6 +12,7 @@ import { AziendeComponent } from './aziende/aziende.component';
 import { DashboardUtenteComponent } from './dashboardUtente/dashboard-utente.component';
 
 import { FormsModule } from '@angular/forms';
+import { ConnessioneComponent } from './connessione/connessione.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     AutoComponent,
     AziendeComponent,
     DashboardUtenteComponent,
+    ConnessioneComponent,
   ],
   imports: [
     BrowserModule,

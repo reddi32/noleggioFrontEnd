@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +13,7 @@ import { AziendeComponent } from './aziende/aziende.component';
 import { DashboardUtenteComponent } from './dashboardUtente/dashboard-utente.component';
 
 import { FormsModule } from '@angular/forms';
-import { ConnessioneComponent } from './connessione/connessione.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +25,6 @@ import { ConnessioneComponent } from './connessione/connessione.component';
     AutoComponent,
     AziendeComponent,
     DashboardUtenteComponent,
-    ConnessioneComponent,
   ],
   imports: [
     BrowserModule,

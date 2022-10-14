@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConnessioneService } from './service/connessione.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
+  nome!: string;
+
+  constructor(private connessione: ConnessioneService) {}
+
+  getID() {
+    this.connessione.get(this.nome).subscribe();
+  }
 }

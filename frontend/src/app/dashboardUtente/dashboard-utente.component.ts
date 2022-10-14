@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardUtenteComponent implements OnInit {
 
+  idUtente: string | undefined
   constructor() { }
 
   ngOnInit(): void {

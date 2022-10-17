@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Utente } from '../model/utente';
+import { ConnessioneService } from '../services/utente/connessione.service';
+
 
 @Component({
   selector: 'app-form-registrazione',

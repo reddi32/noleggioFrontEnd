@@ -32,10 +32,10 @@
                         <div class="col-md-12 mt-3">
                           <label class="mb-3 mr-1" for="gender" ngModel>Sesso: </label>
   
-                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off"  required>
+                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off"  ngModel required>
                           <label class="btn btn-sm btn-outline-secondary" for="male">Maschio</label>
   
-                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off"  required>
+                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" ngModel required>
                           <label class="btn btn-sm btn-outline-secondary" for="female">Femmina</label>
   
                           
@@ -61,7 +61,7 @@
 
                       <div class="col-md-12">
                         <label class="mb-3 mr-1" for="dateStandard">Data di nascita: </label>
-                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard" ngModel>
+                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard" ngModel ngModel>
                     </div>
 
                        <div class="col-md-12">
@@ -86,10 +86,10 @@
                        <div class="col-md-12 mt-3">
                         <label class="mb-3 mr-1" for="account" ngModel>Tipo Account: </label>
 
-                        <input type="radio" class="btn-check" name="account" id="privato" autocomplete="off" required>
+                        <input type="radio" class="btn-check" name="account" id="privato" autocomplete="off" ngModel required>
                         <label class="btn btn-sm btn-outline-secondary" for="privato">Privato</label>
 
-                        <input type="radio" class="btn-check" name="account" id="azienda" autocomplete="off" required>
+                        <input type="radio" class="btn-check" name="account" id="azienda" autocomplete="off" ngModel required>
                         <label class="btn btn-sm btn-outline-secondary" for="azienda">Azienda</label>
 
                         
@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="input-group mb-3">
-                          <input type="file" class="form-control" id="inputGroupFile02">
+                          <input type="file" class="form-control" id="inputGroupFile02" name="patente" ngModel required>
                           <label class="input-group-text" for="inputGroupFile02">Carica file</label>
                         </div>
 

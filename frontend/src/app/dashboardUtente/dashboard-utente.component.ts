@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Utente } from '../utente';
+import { Utente } from '../model/utente';
 
 @Component({
   selector: 'app-dashboard-utente',

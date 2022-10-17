@@ -16,6 +16,7 @@ import { DashboardUtenteComponent } from './dashboardUtente/dashboard-utente.com
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ListaAutoComponent } from './lista-auto/lista-auto.component';
+import { CarrelloComponent } from './carrello/carrello.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ListaAutoComponent } from './lista-auto/lista-auto.component';
     AziendeComponent,
     DashboardUtenteComponent,
     ListaAutoComponent,
+    CarrelloComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,18 @@
 export class Utente {
-    idUtente: number;
-    nome: string;
-    cognome: string;
-    email: string;
-    password: string;
-    dataDiNascita: Date;
-    paeseDiNascita: string;
-    partitaIva: string;
-    azienda: boolean;
-    codiceFiscale: string;
+    idUtente?: any;
+    nome?: string;
+    cognome?: string;
+    email?: string;
+    password?: string;
+    dataDiNascita?: Date;
+    paeseDiNascita?: string;
+    azienda?: boolean;
+    codiceFiscale?: string;
+    sesso?: boolean;
 
-    constructor(idUtente: number, nome: string, cognome: string, email: string, password: string, dataDiNascita: Date, paeseDiNascita: string, partitaIva: string, azienda: boolean, codiceFiscale: string) {
+    
+    
+    /*constructor(idUtente: number, nome: string, cognome: string, email: string, password: string, dataDiNascita: Date, paeseDiNascita: string, azienda: boolean, codiceFiscale: string, sesso: boolean) {
         this.idUtente = idUtente;
         this.nome = nome;
         this.cognome = cognome;
@@ -18,11 +20,12 @@ export class Utente {
         this.password = password;
         this.dataDiNascita = dataDiNascita;
         this.paeseDiNascita = paeseDiNascita;
-        this.partitaIva = partitaIva;
         this.azienda = azienda;
         this.codiceFiscale = codiceFiscale;
+        this.sesso = sesso;
     }
-
+    
+    
     get idUtenti(): number {
         return this.idUtente;
     }
@@ -92,4 +95,6 @@ export class Utente {
     set codiceFiscaleUtenti(codiceFiscale: string) {
         this.codiceFiscale = codiceFiscale;
     }
+*/
 }
+

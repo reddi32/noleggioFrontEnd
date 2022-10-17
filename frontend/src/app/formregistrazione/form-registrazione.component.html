@@ -7,35 +7,31 @@
                 <div class="form-items">
                     <h3>Registrati!</h3>
                     <p>Compilare i campi in basso.</p>
-                    <form class="requires-validation" #registerform="ngForm" (ngSubmit)="onSubmit(registerform)" novalidate>
+                    <form class="requires-validation" #registerform="ngForm" (ngSubmit)="salvaUtente()" novalidate>
 
                         <div class="col-md-12">
-                           <input class="form-control" type="text" name="name" placeholder="Nome" ngModel required>
+                           <input class="form-control" type="text" name="name" placeholder="Nome" [(ngModel)]="utente.nome" required>
                            <div class="valid-feedback">Nome valido!</div>
                            <div class="invalid-feedback">Il nome non può essere vuoto!</div>
                         </div>
 
                         <div class="col-md-12">
-                          <input class="form-control" type="text" name="cognome" placeholder="Cognome" ngModel required>
+                          <input class="form-control" type="text" name="cognome" placeholder="Cognome" [(ngModel)]="utente.cognome" required>
                           <div class="valid-feedback">Cognome valido!</div>
                           <div class="invalid-feedback">Il Cognome non può essere vuoto!</div>
                        </div>
 
-                       <div class="col-md-12">
-                        <input class="form-control" type="text" name="cellulare" placeholder="Cellulare" ngModel required>
-                        <div class="valid-feedback">Cellulare non valido!</div>
-                        <div class="invalid-feedback">Il cellulare non può essere vuoto!</div>
-                     </div>
+                       
 
                        <br>
 
                         <div class="col-md-12 mt-3">
                           <label class="mb-3 mr-1" for="gender" ngModel>Sesso: </label>
   
-                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off"  ngModel required>
+                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" value="0" [(ngModel)]="utente.sesso" required>
                           <label class="btn btn-sm btn-outline-secondary" for="male">Maschio</label>
   
-                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" ngModel required>
+                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" value="1" [(ngModel)]="utente.sesso" required>
                           <label class="btn btn-sm btn-outline-secondary" for="female">Femmina</label>
   
                           
@@ -44,13 +40,13 @@
                           </div>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="email" name="email" placeholder="Indirizzo E-mail" ngModel required>
+                            <input class="form-control" type="email" name="email" placeholder="Indirizzo E-mail" [(ngModel)]="utente.email" required>
                              <div class="valid-feedback">Email non valida!</div>
                              <div class="invalid-feedback">Il campo non può essere vuoto!</div>
                         </div>
 
                         <div class="col-md-12">
-                          <input class="form-control" type="text" name="CF" placeholder="Codice Fiscale" ngModel required>
+                          <input class="form-control" type="text" name="CF" placeholder="Codice Fiscale" [(ngModel)]="utente.codiceFiscale" required>
                            <div class="valid-feedback">Codice fiscale non valido!</div>
                            <div class="invalid-feedback">Il campo non può essere vuoto!</div>
                       </div>
@@ -61,11 +57,11 @@
 
                       <div class="col-md-12">
                         <label class="mb-3 mr-1" for="dateStandard">Data di nascita: </label>
-                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard" ngModel ngModel>
+                        <input input class="form-control" type="date" id="dateStandard" name="dateStandard" [(ngModel)]="utente.dataDiNascita" ngModel>
                     </div>
 
                        <div class="col-md-12">
-                            <select class="form-select mt-3" ngModel required>
+                            <select class="form-select mt-3" [(ngModel)]="utente.paeseDiNascita" required>
                                   <option selected disabled value="">Paese di Nascita</option>
                                   <option value="italia">Italia</option>
                                   <option value="francia">Francia</option>
@@ -77,19 +73,19 @@
 
 
                        <div class="col-md-12">
-                          <input class="form-control" type="password" name="password" placeholder="Password" ngModel required>
+                          <input class="form-control" type="password" name="password" placeholder="Password" [(ngModel)]="utente.password" required>
                            <div class="valid-feedback">Password valida!</div>
                            <div class="invalid-feedback">Devi inserire una password!</div>
                        </div>
 
 
                        <div class="col-md-12 mt-3">
-                        <label class="mb-3 mr-1" for="account" ngModel>Tipo Account: </label>
+                        <label class="mb-3 mr-1" for="account">Tipo Account: </label>
 
-                        <input type="radio" class="btn-check" name="account" id="privato" autocomplete="off" ngModel required>
+                        <input type="radio" class="btn-check" name="account" id="privato" autocomplete="off" value="0" [(ngModel)]="utente.azienda" required>
                         <label class="btn btn-sm btn-outline-secondary" for="privato">Privato</label>
 
-                        <input type="radio" class="btn-check" name="account" id="azienda" autocomplete="off" ngModel required>
+                        <input type="radio" class="btn-check" name="account" id="azienda" autocomplete="off" value="1" [(ngModel)]="utente.azienda" required>
                         <label class="btn btn-sm btn-outline-secondary" for="azienda">Azienda</label>
 
                         
@@ -98,12 +94,12 @@
                         </div>
 
                         <div class="input-group mb-3">
-                          <input type="file" class="form-control" id="inputGroupFile02" name="patente" ngModel required>
+                          <input type="file" class="form-control" id="inputGroupFile02" name="patente" required>
                           <label class="input-group-text" for="inputGroupFile02">Carica file</label>
                         </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" ngModel required>
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                       <label class="form-check-label">Confermo che i dati sono corretti</label>
                      <div class="invalid-feedback">Conferma che i dati immessi sono corretti!</div>
                     </div>

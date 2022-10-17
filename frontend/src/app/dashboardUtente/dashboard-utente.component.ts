@@ -14,7 +14,7 @@ export class DashboardUtenteComponent implements OnInit {
   numeroUtente: Utente[] = [];
   constructor( private http: HttpClient ) { 
     this.numeroUtente.push(
-      new Utente (1, '', '', '', '*******', new Date(), '', '', true, '' )
+      new Utente ()
     );
   }
 

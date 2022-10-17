@@ -8,7 +8,7 @@ import { AziendeComponent } from './aziende/aziende.component';
 import { AutoComponent } from './auto/auto.component';
 import { DashboardUtenteComponent } from './dashboardUtente/dashboard-utente.component';
 import { AuthGuard } from './auth/auth.guard'
-
+import { ListaAutoComponent } from './lista-auto/lista-auto.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'faq', component: FaqComponent},
   { path: 'auto', component: AutoComponent},
-  { path: 'dashboardUtente', component: DashboardUtenteComponent, canActivate: [AuthGuard]}
+  { path: 'dashboardUtente', component: DashboardUtenteComponent, canActivate: [AuthGuard]},
+  { path: 'listaAuto', component: ListaAutoComponent}
 
 ];
 

@@ -12,8 +12,10 @@ import { AutoComponent } from './auto/auto.component';
 import { AziendeComponent } from './aziende/aziende.component';
 import { DashboardUtenteComponent } from './dashboardUtente/dashboard-utente.component';
 
+
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ListaAutoComponent } from './lista-auto/lista-auto.component';
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     AutoComponent,
     AziendeComponent,
     DashboardUtenteComponent,
+    ListaAutoComponent,
   ],
   imports: [
     BrowserModule,

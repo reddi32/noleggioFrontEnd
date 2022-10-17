@@ -10,9 +10,7 @@ export class AppComponent {
   title = 'frontend';
   nome!: string;
 
-  constructor(private connessione: ConnessioneService) {}
+  constructor() {}
 
-  getID() {
-    this.connessione.get(this.nome).subscribe();
-  }
+  
 }

@@ -7,10 +7,10 @@ export class Utente {
     dataDiNascita: Date;
     paeseDiNascita: string;
     partitaIva: string;
-    azienda: number;
+    azienda: boolean;
     codiceFiscale: string;
 
-    constructor(idUtente: number, nome: string, cognome: string, email: string, password: string, dataDiNascita: Date, paeseDiNascita: string, partitaIva: string, azienda: number, codiceFiscale: string) {
+    constructor(idUtente: number, nome: string, cognome: string, email: string, password: string, dataDiNascita: Date, paeseDiNascita: string, partitaIva: string, azienda: boolean, codiceFiscale: string) {
         this.idUtente = idUtente;
         this.nome = nome;
         this.cognome = cognome;
@@ -79,10 +79,10 @@ export class Utente {
         this.partitaIva = partitaIva;
     }
 
-    get aziendaUtenti(): number {
+    get aziendaUtenti(): boolean {
         return this.azienda;
     }
-    set aziendaUtenti(azienda: number) {
+    set aziendaUtenti(azienda: boolean) {
         this.azienda = azienda;
     }
 

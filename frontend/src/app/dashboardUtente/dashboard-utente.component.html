@@ -3,6 +3,9 @@
       <div class="col">
        <div class="p-3 shadow rounded">
         <p class="fs-2">Il mio account</p>
+        <tr *ngFor="let idUtente of numeroUtente">
+          <th>{{idUtente.idUtenti}}</th>
+        </tr>
        </div>
       </div>
       <div class="col">

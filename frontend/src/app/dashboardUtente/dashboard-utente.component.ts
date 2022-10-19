@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Utente } from '../model/utente';
+import { ConnessioneService } from '../services/utente/connessione.service';
 
 @Component({
   selector: 'app-dashboard-utente',
@@ -12,7 +13,8 @@ export class DashboardUtenteComponent implements OnInit {
   idUtente: any | undefined
 
   numeroUtente: Utente[] = [];
-  constructor( private http: HttpClient ) { 
+  loggato: any;
+  constructor( private http: HttpClient, private connessioneService: ConnessioneService  ) { 
     this.numeroUtente.push(
       new Utente ()
     );
@@ -23,4 +25,10 @@ export class DashboardUtenteComponent implements OnInit {
     response.subscribe((data) => data);
   }
 
+  logout() {
+    window.sessionStorage.setItem('loggato', "false");
+    window.sessionStorage.setItem('whoLog', '');
+    window.dispatchEvent( new Event('storage'))
+    this.loggato = sessionStorage.getItem('loggato');
+  }
 }

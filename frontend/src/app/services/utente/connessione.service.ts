@@ -28,8 +28,19 @@ export class ConnessioneService {
     return this.http.put(`${baseUrl}/${idUtente}`, data);
   }
 
- 
+  getIsLoggedIn():boolean{
+    if(sessionStorage.getItem("login")=="true"){
+        return true;
+    }
+    return false;
+}
+setIsLoggedIn(){
+  sessionStorage.setItem("login", "true");
+}
 
-
+setLogout(){
+    sessionStorage.setItem("login", "false");
+    sessionStorage.setItem("id", "0");
+}
 
 }

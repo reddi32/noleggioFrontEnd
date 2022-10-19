@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
         console.log(error);
       }
     );
+    
     this.loggato = sessionStorage.getItem('loggato');
     if(this.loggato === 'true'){
       this.route.navigate(['/']);
@@ -40,10 +41,12 @@ export class LoginComponent implements OnInit {
         if (ur.password === this.password_modello) {
           window.sessionStorage.setItem('loggato', "true");
           window.sessionStorage.setItem('whoLog', ur.email);
+          window.sessionStorage.setItem('nomeUtenteLoggato', ur.nome);
           window.dispatchEvent( new Event('storage'))
           this.loggato = sessionStorage.getItem('loggato');
           this.email_modello = '';
           this.password_modello = '';
+
         }
       }
     });

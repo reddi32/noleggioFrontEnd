@@ -12,12 +12,12 @@ export class ConnessioneService {
 
   constructor(private http: HttpClient) { }
 
-  get(nome: string) {
-    return this.http.get(`${baseUrl}/all?nome=${nome}`);
+  getNome(nome: string) {
+    return this.http.get(baseUrl+'/nome?'+ nome);
   }
 
   getAll(): Observable<Utente[]> {
-    return this.http.get<Utente[]>(`${baseUrl}/all`);
+    return this.http.get<Utente[]>(baseUrl+'/all');
   }
 
   create(data: any): Observable<any> {
@@ -34,6 +34,11 @@ export class ConnessioneService {
     }
     return false;
 }
+
+getNomeLoggato() {
+    return sessionStorage.getItem("nomeUtenteLoggato");
+}
+
 setIsLoggedIn(){
   sessionStorage.setItem("login", "true");
 }

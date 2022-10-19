@@ -3,10 +3,11 @@
       <div class="col">
        <div class="p-3 shadow rounded">
         <p class="fs-2">Il mio account</p>
-        <button class="btn btn-outline-primary" (click)="logout()">Logout</button>
-        <!--<tr *ngFor="let idUtente of numeroUtente">
-          <th>{{idUtente.idUtenti}}</th>
-        </tr> -->
+        <button class="btn btn-outline-primary" routerLink="/login" (click)="logout()">Logout</button>
+        <p>{{this.nome}}</p>
+        <p>{{this.codiceFiscale}}</p>
+        <p>{{this.email}}</p>
+        <p>{{this.codiceFiscale}}</p>
        </div>
       </div>
       <div class="col">

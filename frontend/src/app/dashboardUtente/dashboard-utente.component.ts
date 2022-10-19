@@ -12,14 +12,36 @@ export class DashboardUtenteComponent implements OnInit {
 
   idUtente: any | undefined
   loggato: any;
+
+  nome: any;
+  cognome: any;
+  dataNascita: any;
+  luogoNascita: any;
+  codiceFiscale: any;
+  email: any;
+
   constructor( private http: HttpClient, private connessioneService: ConnessioneService  ) { 
+    console.log((this.connessioneService.getNomeLoggato()!))
+  this.connessioneService.getNome(this.connessioneService.getNomeLoggato()!).subscribe (
+  (response: any) => {
+    this.nome=response.nome;
+    this.cognome=response.cognome;
+    this.codiceFiscale=response.codice_fiscale;
+    this.email=response.email;
+  },
+  (error: any) => {
     
+   },
+  )
+  console.log(this.email)
   }
+  
 
   ngOnInit(): void {
-    let response = this.http.get("http://localhost:8080/utenti");
-    response.subscribe((data) => data);
+   /* let response = this.http.get("http://localhost:8080/utenti");
+    response.subscribe((data) => data);*/
   }
+
 
   logout() {
     window.sessionStorage.setItem('loggato', "false");

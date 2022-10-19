@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Utente } from 'src/app/model/utente';
 
-const baseUrl = "http://localhost:8080/utenti/all";
+const baseUrl = "http://localhost:8080/utenti";
 
 @Injectable({
   providedIn: 'root'
@@ -17,11 +17,11 @@ export class ConnessioneService {
   }
 
   getAll(): Observable<Utente[]> {
-    return this.http.get<Utente[]>(baseUrl);
+    return this.http.get<Utente[]>(`${baseUrl}/all`);
   }
 
   create(data: any): Observable<any> {
-    return this.http.post(baseUrl, data);
+    return this.http.post(`${baseUrl}/add`, data);
   }
 
   update(idUtente: any, data: any): Observable<any> {

@@ -21,23 +21,7 @@
                           <div class="invalid-feedback">Il Cognome non può essere vuoto!</div>
                        </div>
 
-                       
-
                        <br>
-
-                        <div class="col-md-12 mt-3">
-                          <label class="mb-3 mr-1" for="gender" ngModel>Sesso: </label>
-  
-                          <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" value="0" [(ngModel)]="utente.sesso" required>
-                          <label class="btn btn-sm btn-outline-secondary" for="male">Maschio</label>
-  
-                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" value="1" [(ngModel)]="utente.sesso" required>
-                          <label class="btn btn-sm btn-outline-secondary" for="female">Femmina</label>
-  
-                          
-                             <div class="valid-feedback mv-up">Sesso selezionato!</div>
-                              <div class="invalid-feedback mv-up">Seleziona il sesso!</div>
-                          </div>
 
                         <div class="col-md-12">
                             <input class="form-control" type="email" name="email" placeholder="Indirizzo E-mail" [(ngModel)]="utente.email" required>

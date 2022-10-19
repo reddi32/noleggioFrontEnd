@@ -22,10 +22,8 @@ export class FormRegistrazioneComponent implements OnInit {
     codiceFiscale: '',
     paeseDiNascita: '',
     azienda: undefined,
-    sesso: undefined,
   };
   submitted = false;
-  utenti: Utente[] = [];
 
   constructor(private connessioneService: ConnessioneService, private route:Router) { 
     this.isLoggedin = sessionStorage.getItem('loggato');
@@ -38,19 +36,9 @@ export class FormRegistrazioneComponent implements OnInit {
   }
 
   salvaUtente(): void{
-    const data = {
-      nome: this.utente.nome,
-      cognome: this.utente.cognome,
-      email: this.utente.email,
-      password: this.utente.password,
-      dataDiNascita: this.utente.dataDiNascita,
-      codiceFiscale: this.utente.codiceFiscale,
-      paeseDiNascita: this.utente.paeseDiNascita,
-      azienda: this.utente.azienda,
-      sesso: this.utente.sesso,
-    };
-
-    this.connessioneService.create(data).subscribe(
+  
+    console.log(this.utente)
+    this.connessioneService.create(this.utente).subscribe(
       response => {
         this.submitted = true;
         window.sessionStorage.setItem('loggato', 'true');
@@ -64,7 +52,7 @@ export class FormRegistrazioneComponent implements OnInit {
               if (this.utente.email === utente.email){
                 console.log('ok')
 
-                window.sessionStorage.setItem('whoLog', utente.idUtente);
+                window.sessionStorage.setItem('whoLog', utente.email);
                 window.dispatchEvent( new Event('storage'))
               }
             })
@@ -90,9 +78,6 @@ export class FormRegistrazioneComponent implements OnInit {
 
 
 
-
-
-
   }
 
   /*onSubmit(form: NgForm) {
@@ -101,5 +86,5 @@ export class FormRegistrazioneComponent implements OnInit {
     console.log(form)
 
   }
-}
-*/
+}*/
+

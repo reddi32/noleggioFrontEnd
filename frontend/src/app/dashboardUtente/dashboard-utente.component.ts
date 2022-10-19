@@ -11,13 +11,9 @@ import { ConnessioneService } from '../services/utente/connessione.service';
 export class DashboardUtenteComponent implements OnInit {
 
   idUtente: any | undefined
-
-  numeroUtente: Utente[] = [];
   loggato: any;
   constructor( private http: HttpClient, private connessioneService: ConnessioneService  ) { 
-    this.numeroUtente.push(
-      new Utente ()
-    );
+    
   }
 
   ngOnInit(): void {

@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
       if (ur.email === this.email_modello) {
         if (ur.password === this.password_modello) {
           window.sessionStorage.setItem('loggato', "true");
-          window.sessionStorage.setItem('whoLog', ur.idUtente);
+          window.sessionStorage.setItem('whoLog', ur.email);
           window.dispatchEvent( new Event('storage'))
           this.loggato = sessionStorage.getItem('loggato');
           this.email_modello = '';

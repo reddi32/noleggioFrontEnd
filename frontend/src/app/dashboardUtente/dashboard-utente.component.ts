@@ -17,7 +17,7 @@ export class DashboardUtenteComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    let response = this.http.get("http://localhost:8080/utenti/all");
+    let response = this.http.get("http://localhost:8080/utenti");
     response.subscribe((data) => data);
   }
 

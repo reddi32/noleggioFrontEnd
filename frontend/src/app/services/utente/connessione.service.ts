@@ -13,7 +13,7 @@ export class ConnessioneService {
   constructor(private http: HttpClient) { }
 
   getNome(nome: string) {
-    return this.http.get(baseUrl+'/nome?'+ nome);
+    return this.http.get(baseUrl+'/nome?nome='+ nome);
   }
 
   getAll(): Observable<Utente[]> {

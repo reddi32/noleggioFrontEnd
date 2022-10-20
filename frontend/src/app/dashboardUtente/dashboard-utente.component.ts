@@ -21,7 +21,7 @@ export class DashboardUtenteComponent implements OnInit {
   email: any;
 
   constructor( private http: HttpClient, private connessioneService: ConnessioneService  ) { 
-    console.log((this.connessioneService.getNomeLoggato()!))
+    this.nome = ((this.connessioneService.getNomeLoggato()!))
   this.connessioneService.getNome(this.connessioneService.getNomeLoggato()!).subscribe (
   (response: any) => {
     this.nome=response.nome;
@@ -48,5 +48,6 @@ export class DashboardUtenteComponent implements OnInit {
     window.sessionStorage.setItem('whoLog', '');
     window.dispatchEvent( new Event('storage'))
     this.loggato = sessionStorage.getItem('loggato');
+    //window.sessionStorage.setItem('nomeUtenteLoggato', '');
   }
 }

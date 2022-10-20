@@ -21,19 +21,19 @@ export class DashboardUtenteComponent implements OnInit {
   email: any;
 
   constructor( private http: HttpClient, private connessioneService: ConnessioneService  ) { 
-    this.nome = ((this.connessioneService.getNomeLoggato()!))
+    this.nome = ((this.connessioneService.getNomeLoggato()))
   this.connessioneService.getNome(this.connessioneService.getNomeLoggato()!).subscribe (
   (response: any) => {
-    this.nome=response.nome;
-    this.cognome=response.cognome;
-    this.codiceFiscale=response.codice_fiscale;
-    this.email=response.email;
+    this.nome=response?.nome;
+    this.cognome=response?.cognome;
+    this.codiceFiscale=response?.codice_fiscale;
+    this.email=response?.email;
   },
   (error: any) => {
     
    },
   )
-  console.log(this.email)
+  //console.log(this.email)
   }
   
 
@@ -48,6 +48,6 @@ export class DashboardUtenteComponent implements OnInit {
     window.sessionStorage.setItem('whoLog', '');
     window.dispatchEvent( new Event('storage'))
     this.loggato = sessionStorage.getItem('loggato');
-    //window.sessionStorage.setItem('nomeUtenteLoggato', '');
+    window.sessionStorage.setItem('nomeUtenteLoggato', '');
   }
 }
